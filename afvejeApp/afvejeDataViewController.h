@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface afvejeDataViewController : UIViewController
+@interface afvejeDataViewController : UIViewController <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *dataLabel;
 @property (strong, nonatomic) id dataObject;
+- (IBAction)firstButton:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITextField *textfield;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
+@property (copy, nonatomic) NSString *userName;
 
 @end
